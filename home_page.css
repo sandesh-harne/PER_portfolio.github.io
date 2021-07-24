@@ -7,7 +7,7 @@
 
 body{
     /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
-    background: white;
+    background: rgb(247, 232, 232);
     overflow: auto;
 
      display: flex;
@@ -48,8 +48,7 @@ body{
     position: absolute;
     align-items: center;
     /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
-    background-color: rgb(255, 255, 255);
-    /* background-color: transparent; */
+    background-color: transparent;
     margin-left: 1.5rem;
     margin-top: 15px;
     border: 1px transparent rgb(83, 81, 81);
@@ -110,11 +109,11 @@ body{
     padding: 0px 50px 0px 50px;
     margin-left: 5px;
     margin-right: 5px;
-    background: linear-gradient(to right, #5e595b 0%, #b9b8b7 100%);
+    background: linear-gradient(to right, #e7d5dc 0%, #b9b8b7 100%);
     /* background: linear-gradient(180deg,rgb(223, 74, 74),pink,rgb(216, 95, 216));*/
     /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
     /* background-color: #8A2BE2; */
-    /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
+    
     
 
     z-index: 3;
