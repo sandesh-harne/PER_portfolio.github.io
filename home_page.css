@@ -6,8 +6,8 @@
 }
 
 body{
-    background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);
-    /* background: white; */
+    /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
+    background: white;
     overflow: auto;
 
      display: flex;
