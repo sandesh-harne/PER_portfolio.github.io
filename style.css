@@ -108,8 +108,8 @@ body{
     height:42rem;
     width: 20rem;
     /* background: linear-gradient(180deg,rgb(223, 74, 74),pink,rgb(216, 95, 216));*/
-    background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224));
-    /* background-color: rgb(255, 255, 255); */
+    /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
+    background-color: rgb(255, 255, 255);
 
 
     display: flex;
