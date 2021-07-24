@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVG Gooey Cursor Demo</title>
+<style>
+/* GLobal */
+:root {
+  cursor: none !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body { background: linear-gradient(to top right, #060628, #1F245A, #682359);}
+
+/* Container */
+.cursor {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* SVG Filters should be applied to the container */
+  -webkit-filter: url("#filter-name");
+  filter: url("#filter-name");
+  /*
+  Load filters from external SVGs (optional):
+  filter: url('filters.svg#filter-name');
+  */
+}
+
+/* Dot */
+.dot {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  background: #EEEEEE;
+  border-radius: 40px;
+  transition: ease .1s;
+  pointer-events: none;
+}
+
+.dot:nth-child(5){
+  background: #9C27B0;
+  transition: ease .1s;
+  transform: scale(1);
+}
+
+.dot:nth-child(4){
+  background: #B037AD;
+  transition: ease .12s;
+  transform: scale(.8);
+}
+
+.dot:nth-child(3){
+  background: #C245AA;
+  transition: ease .14s;
+  transform: scale(.6);
+}
+
+.dot:nth-child(2){
+  background: #D252A7;
+  transition: ease .16s;
+  transform: scale(.4);
+}
+
+.dot:nth-child(1){
+  background: #E35FA4;
+  transition: ease .18s;
+  transform: scale(.2);
+}
+</style>
+</head>
+
+<body>
+<div class="cursor">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+<!-- SVG Filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="filter-name">
+      <feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="15"
+        result="my-blur" />
+      <feColorMatrix
+        in="my-blur"
+        mode="matrix"
+        values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 20 -8"
+        result="my-gooey" />
+    </filter>
+  </defs>
+</svg>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>
+$(document).mousemove(function(e){
+  //Get 'container' offset:
+  o = $('.cursor').offset();
+  //Track mouse position:
+  $(".dot").css({
+    "top": e.pageY - o.top,
+    "left": e.pageX - o.left
+  });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

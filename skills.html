@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+    <title>S.B.Harne</title>
+    <style>
+        body {
+            background: linear-gradient(to right,rgb(114, 112, 112),black);
+        }
+
+        #tag {
+            position: absolute;
+            left: 53%;
+            top: 15%;
+        }
+
+        .tag{
+            background: black;
+            border: 10px solid rgb(0, 0, 0);
+            border-radius: 30px;
+            box-shadow: -2px 0 3px rgba(155, 147, 147, 0.6);
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="skill.css">
+</head>
+
+<body>
+
+<div class="skills">
+    <ul>
+        <li>HTML<meter id="file" value="70" max="100">70%</meter></li>
+        <li>Javascript<meter value="80" max="100">80%</meter></li>
+        <li>CSS<meter value="50" max="100">50%</meter></li>
+        <li>Python<meter value="90" max="100">90%</meter></li>
+
+
+
+        </ul>
+</div>
+    <div class="tag" id="tag">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+    <script src="Script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            var entries = [
+                { label: 'HTML' },
+                { label: 'CSS' },
+                { label: 'JAVASCRIPT' },
+                { label: 'PHP' },
+                { label: 'PYTHON' },
+                { label: 'VS.CODE' },
+                { label: 'JQUERY' },
+                { label: 'BOOTSTRAP' },
+                { label: 'DJANGO' },
+                { label: 'C++' },
+            ];
+            var settings = {
+                entries: entries,
+
+                width: 640,
+                height: 480,
+                radius: '65%',
+                radiusMin: 75,
+                bgDraw: true,
+                bgcoclor: 'white',
+                opacityover: 1.00,
+                opacityout: 0.05,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: 1,
+                fontFamily: 'Courier,Ariel,sans-serif',
+                fontsize: 30,
+                fontcolor: 'rgb(182, 61, 61)',
+                fontWeight: 'bold',
+                fontstyle: 'normal',
+                fontStrech: 'normal',
+                fontTouppercase: true
+
+
+            };
+            $('#tag').svg3DTagCloud(settings);
+        });
+
+    </script>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor")
+        var cursor2 = document.querySelector(".cursor2")
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top:" + e.clientY + "px;";
+        }
+        )
+
+
+    </script>
+
+</div>
+
+</body>
+
+</html>

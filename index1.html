@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="home_page.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+    <script src="Gsap_animation.js" defer></script>
+    
+    <div class="container" >
+        <div class="profile_pic">
+            <img src="dp.jpg" alt="">
+        </div>
+        <div class="heading">
+            <h1 data-text="Hey Bug, ">Hey Bug, <br> I am :<br><span1>S</span1>andesh<br><span2>H</span2>arne</h1>
+        </div>
+        <div class="para">
+            <p>I am a Fullstack Web-Developer. I am pursing Bachelor of Engg.</p>
+        </div>
+    </div>
+    <div class="navbar navigation_items">
+        <div class="content">
+            
+        <ol>
+            <li class="links"><a href="">Home</a></li>
+            <li class="links"><a href="projects.html">Project</a></li>
+            <li class="links"><a href="skills.html">Skills</a></li>
+            <li class="links"><a href="">Resume</a></li>
+            <li class="links"><a href="">Contact</a></li>
+        </ol>
+    </div>
+<div class="wrapper">
+    <div class="static-txt" style="margin-top: 0px;">I am </div><ul><li class="dynamic-txt"></li></ul>
+</div>
+<div class="wrapper2">
+    <div class="icon facebook">
+        <div class="tooltip"><a href="https://www.facebook.com/">facebook</a></div>
+        <span><i class="fab fa-facebook fa-2x" style="color:	#4267B2;"></i></span>
+    </div>
+    <div class="icon twitter">
+        <div class="tooltip"><a href="https://www.twitter.com">twitter....</a></div>
+        <span><i class="fab fa-twitter fa-2x" style="color:#1DA1F2;"></i></span>
+    </div>
+    <div class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fab fa-instagram fa-2x" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);border-radius:20px;"></i></span>
+    </div>
+    <div class="icon github">
+        <div class="tooltip">Git-Hub</div>
+        <span><i class="fab fa-github fa-2x" style="color: #141414;"></i></span>
+    </div>
+    <div class="icon youtube">
+        <div class="tooltip">YouTube</div>
+        <span><i class="fab fa-youtube fa-2x" style="color: #c4302b"></i></span>
+    </div>
+</div>
+    </div>
+    <div class="image">
+        <img src="19362653_copy.png" alt="">
+    </div>
+    <div class="skill">
+        <div class="heading">
+        <h2 style="letter-spacing:4px"><span style="color: rgb(250, 71, 71);">S</span><span style="color: skyblue;">K</span><span style="color: yellow;">I</span><span style="color: rgb(26, 26, 156);">L</span><span style="color: rgb(88, 88, 211);">L</span><span style="color: rgb(228, 18, 18);">S</span></h2>
+    </div>
+        <div class="items">
+        <ul>
+            <li style="background-color: rgb(250, 71, 71); color: white; border-bottom-right-radius:0px; border-top-left-radius:0px; "><a href="#">HTML</a></li>
+            <li style="background-color: skyblue; border-bottom-left-radius:0px;"><a href="#">CSS</a></li>
+            <li style="background-color: rgb(236, 236, 76);  border-bottom-right-radius:0px;"><a style="color:black;" href="#">JavaSript</a></li>
+            <li style="background-color: rgb(26, 26, 156); color: white; border-bottom-left-radius:0px;"><a href="#">Python</a></li>
+            <li style="background-color: rgb(88, 88, 211); color: white; border-bottom-right-radius:0px;"><a style="padding-right: 30px;" href="#">C++</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="frame">
+        <div class="track"></div>
+        <div class="circle">
+        <div class="point">
+            <img src="airplane1.png">
+        </div>
+
+        </div>
+
+        </div>
+
+    <script>
+        const text = ['Programmer','Front-End Developer','Engineer'];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+
+        (function type(){
+            if (count===text.length){
+                count =0;
+            }
+            currentText  = text[count];
+            letter = currentText.slice(0, ++index);
+            document.querySelector('.dynamic-txt').textContent = letter;
+            if(letter.length === currentText.length){
+                count++;
+                index = 0;
+                
+            }
+            setTimeout(type,400);
+
+        }());
+    </script>
+
+
+</body>
+</html>

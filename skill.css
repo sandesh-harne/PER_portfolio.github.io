@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #696969;
+    /* display: flex; */
+}
+
+
+
+.barwrap{
+    height: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-width: 2rem;
+    margin-left: -0.25rem;
+}
+
+.barwrap .bar{
+    background: linear-gradient(45deg,#b74096,#da4772);
+    width: 10px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.barwrap .text{
+    font-size: 14px;
+    margin-bottom: 5px;;
+    color: #b74096;
+
+}
+
+.group{
+    display: flex;
+
+}
+.group + .group{
+    margin-left: 4rem;
+}
+
+.chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+meter{
+    color: #da4772;
+}
