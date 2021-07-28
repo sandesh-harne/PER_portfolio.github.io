@@ -7,7 +7,8 @@
 
 body{
     /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
-    background: rgb(247, 232, 232);
+    background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%);
+    /* background: rgb(255, 255, 255); */
     overflow: auto;
 
      display: flex;
@@ -51,7 +52,7 @@ body{
     background-color: transparent;
     margin-left: 1.5rem;
     margin-top: 15px;
-    border: 1px transparent rgb(83, 81, 81);
+    border: 1px transparent rgb(129, 111, 111);
     box-shadow: 2px 2px 5px rgb(62 43 43),
     inset 5px 1px 6px rgb(255 211 211),
     inset 2px 1px 8px rgb(241 156 156),
@@ -109,7 +110,7 @@ body{
     padding: 0px 50px 0px 50px;
     margin-left: 5px;
     margin-right: 5px;
-    background: linear-gradient(to right, #e7d5dc 0%, #b9b8b7 100%);
+    background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%);
     /* background: linear-gradient(180deg,rgb(223, 74, 74),pink,rgb(216, 95, 216));*/
     /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
     /* background-color: #8A2BE2; */
@@ -136,11 +137,11 @@ body{
 .container .heading{
     height:15rem;
     width: 14rem;
-    border: 1px transparent rgb(233, 127, 127);
+    border: 1px transparent rgb(192, 151, 151);
     box-shadow: 2px 2px 5px rgb(241, 236, 236),
     inset  5px 1px 6px rgb(224, 201, 201),
-    inset 2px 1px 8px rgb(218, 96, 96),
-    inset 2px 1px 6px rgb(136, 103, 103);
+    inset 2px 1px 8px rgb(189, 146, 146),
+    inset 2px 1px 6px rgb(163, 148, 148);
     border-radius: 10px;
    transition: 0.3s;
 }
@@ -171,7 +172,7 @@ body{
     
 }
 .container .heading h1 span1{
-    color:rgb(186, 11, 255);
+    color:rgb(128, 128, 128);
     font-size: 3rem;
     font-family: cursive;
     
@@ -182,7 +183,7 @@ body{
 .container .heading h1 span2{
     height:5px;
     width:10px;
-    color:rgb(186, 11, 255);
+    color:rgb(255, 0, 0);
     font-size: 3rem;
     font-family: cursive;
     margin-top: 0px;
@@ -192,7 +193,7 @@ body{
 }
 
 .container .heading h1 span1{
-    color:rgb(186, 11, 255);
+    color:rgb(255, 0, 0);
     font-size: 4rem;
     font-family: cursive;
     margin-top: 0px;
