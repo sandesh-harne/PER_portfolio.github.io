@@ -29,7 +29,9 @@ body{
 }
 .container .profile_pic:hover{
     transform: rotate(360deg);
+    
 }
+
 .container .profile_pic img{
     height: 150px;
     width: 150px;
@@ -70,26 +72,33 @@ body{
     margin-left: 150px;
     list-style: none;
     z-index: 5;
-    
+    transform: translateX(200px);
+    transition: 2.5s;
+    opacity: 0;
 
 }
 .navbar .content ol li{
-    margin: 10px 0 0 90px;
+    margin: 15px 0 0 90px;
     font-size: 1.1rem;
-    padding:0px 6px 0px 6px;
+    padding:0px 16px 0px 6px;
     background:transparent;
     color: black;
     display:block;
     transform: skewX(2deg);
-    transition: .5s linear;
     z-index: 5;
 
 }
 .navbar .content ol li a{
     text-decoration: none;
-    color: black;
+    color: white;
     letter-spacing: 2px;
-    padding: 5px;
+    padding: 5px 10px;
+    z-index: 5;
+    background: linear-gradient(to right, #6b6869 0%, #b6793c 100%);
+    border-radius: 20px;
+    
+
+
 }
 .navbar .content ol li:hover{
     border: 1px transparent rgb(83, 81, 81);
@@ -132,6 +141,28 @@ body{
     border-top-right-radius: 0px;
 
    
+}
+.burger{
+    opacity: 1;
+    margin: 10px 0px 0px 250px;
+    z-index: 5;
+    transition: 0.4s ease;
+}
+.burger .lines{
+    height:5px;
+    width: 35px;
+    background-color: black;
+    margin-top:4px;
+    margin-left:-14px;
+
+    border-radius: 5px;
+    z-index: 15;
+
+
+}
+.navbar .burger:hover + .content ol{
+    transform: translateX(0px);
+    opacity: 1;
 }
 
 .container .heading{
@@ -353,7 +384,7 @@ body{
 
 .wrapper{
     display: inline-flex;
-    margin: 385px 0px 0px 10px;
+    margin: 325px 0px 0px 10px;
     overflow: hidden;
     letter-spacing: 2px;
 }
@@ -365,11 +396,11 @@ body{
 }
 
 .wrapper .dynamic-txt{
-     margin-left: 105px;
+     margin-left: 95px;
     font-size: 40px;
 
-     height: 40px;
-     line-height: 40px;
+     height: 60px;
+     line-height: 60px;
      overflow: hidden;
     border-right: 0px solid rgb(78, 68, 68);
     color: rgb(73, 72, 72);
@@ -516,7 +547,7 @@ body{
     z-index: 19;
     transform:rotate(0deg);
     top:0;
-    margin-top: 700px;
+    margin-top: 650px;
     
     
     margin-left: -50px;
