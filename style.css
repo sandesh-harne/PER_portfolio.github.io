@@ -8,7 +8,12 @@
 
 }
 
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
 body{
     overflow: hidden; 
     /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
@@ -82,7 +87,7 @@ body{
     /* background-color: rgb(255, 255, 255); */
 
     /* background-color: transparent; */
-    margin-left: 19rem;
+    margin-left: 20rem;
     border: 1px transparent rgb(83, 81, 81);
     box-shadow: 2px 2px 5px rgb(62 43 43),
      inset 5px 1px 6px rgb(255 211 211),
@@ -130,17 +135,18 @@ body{
    transform: skew(-2deg);
     border-radius: 20px;
 }
-
-/* Main Container Having 1. */
+canvas{
+    z-index: 0;
+}
 
 .container{
-    height:auto;
+    height:40rem;
     width: 20rem;
     /* background: linear-gradient(180deg,rgb(223, 74, 74),pink,rgb(216, 95, 216));*/
     /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
     /* background-color: rgb(255, 255, 255); */
 
-
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
