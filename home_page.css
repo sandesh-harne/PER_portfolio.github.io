@@ -7,15 +7,30 @@
 
 body{
     /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
-    background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%);
+    /* background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%); */
     /* background: rgb(255, 255, 255); */
-    overflow: auto;
+    overflow: initial;
 
      display: flex;
      justify-content: initial;
      background-size: cover;
+     background: linear-gradient(-45deg, #ee7752, #e73c7e, #24beaa, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
      
-     
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -119,7 +134,8 @@ body{
     padding: 0px 50px 0px 50px;
     margin-left: 5px;
     margin-right: 5px;
-    background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%);
+    background: transparent;
+    /* background: linear-gradient(to right, #e7d5dc 0%, #ece9e6 100%); */
     /* background: linear-gradient(180deg,rgb(223, 74, 74),pink,rgb(216, 95, 216));*/
     /* background: linear-gradient(180deg,rgb(234 227 227 / 0%),rgb(156 153 154 / 25%),rgb(224, 222, 224)); */
     /* background-color: #8A2BE2; */
@@ -440,7 +456,7 @@ body{
     left: -4rem;
     background: transparent;
     z-index: 0;
-    /* overflow: hidden; */
+    /* overflow-x: hidden; */
 
 }
 

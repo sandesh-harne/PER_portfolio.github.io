@@ -52,7 +52,7 @@ body::after{
 h1{
     position: absolute;
     margin-bottom: 850px;
-    font-size: 5em;
+    font-size: 4em;
     color: rgba(241, 239, 239, 0.774);
     text-shadow: 4px 2px 3px rgb(139 86 86);
 }
