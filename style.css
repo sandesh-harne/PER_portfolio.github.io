@@ -4,7 +4,7 @@
     margin:0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    cursor:  none;
+    cursor:  crosshair;
     
 
 }
@@ -16,6 +16,7 @@ html, body {
     overflow: hidden;
   }
 body{
+    height: 100%;
     overflow: hidden; 
     /* background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%); */
    
@@ -27,9 +28,9 @@ body{
      justify-content: initial;
      background-size: cover;
      /* background-image: url('background.jpg');    */
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #24beaa, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #54e2ca, #c54636);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease-in-out infinite;
 
 
 
@@ -256,11 +257,13 @@ opacity: 0;
 /* PNG image */
 
 .image{
-    height:37rem;
+    height:auto;
     width: 800px;
-    position: relative;
+    position: absolute;
     top: 50px;
-    margin-right: 700px;
+    margin-left: 300px;
+    
+
     z-index: 1;
     
 }
