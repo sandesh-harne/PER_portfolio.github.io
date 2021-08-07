@@ -116,7 +116,7 @@ h1{
 
 .container .card .content p{
     font-size:1.0em;
-    color: #fff;
+    color: rgb(211, 202, 202);
     font-weight: 300;
 }
 .container .card .content a:hover{
